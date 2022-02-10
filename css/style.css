@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 
-@import 'blockchain.css';
-@import 'cli.css';
-@import 'footer.css';
-@import 'languages.css';
-@import 'navbar.css';
-@import 'showcase.css';
-@import 'stats.css';
+@import './index/blockchain.css';
+@import './index/cli.css';
+@import './index/languages.css';
+@import './index/showcase.css';
+@import './index/stats.css';
 
-@import 'utilities.css';
+@import './shared/footer.css';
+@import './shared/navbar.css';
+
+@import './shared/utilities.css';
 
 
 :root {
