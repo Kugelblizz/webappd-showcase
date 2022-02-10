@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+@import 'blockchain.css';
+@import 'cli.css';
+@import 'footer.css';
+@import 'languages.css';
+@import 'navbar.css';
+@import 'showcase.css';
+@import 'stats.css';
+
+@import 'utilities.css';
+
+
+:root {
+  --primary-color: #047aed;
+  --primary-accent-color: #1e82e6;
+  --primary-light-color: #adcff1;
+
+  --secondary-color: #1c3fa8;
+  --secondary-accent-color: #3958b8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  /* font-family: 'Share Tech', sans-serif; */
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+h1,
+h2 {
+  font-family: 'Share Tech', sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  font-family: 'Share Tech', sans-serif;
+}

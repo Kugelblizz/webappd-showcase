@@ -1,0 +1,29 @@
+.footer {
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 80px 0 40px;
+}
+
+.footer a{
+  color: #fff;
+}
+
+.footer .footer-copyright {
+  align-self: start;
+  justify-self: start;
+  padding: 0 0 20px;
+}
+
+.footer .footer-navigation {
+  align-self: center;
+  justify-self: start;
+}
+
+.footer .footer-socials {
+  align-self: center;
+  justify-self: end;
+}
+
+.footer .footer-socials a {
+  margin: 0 8px;
+}

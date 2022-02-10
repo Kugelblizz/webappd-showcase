@@ -1,0 +1,82 @@
+
+.showcase {
+  height: 500px;
+  background: url(/images/hero.jpg) var(--primary-color);
+  color: #fff;
+  position: relative;
+}
+
+.showcase h1 {
+  font-size: 50px;
+}
+
+.showcase-p-container {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.showcase p {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.showcase .grid {
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+  overflow: visible;
+}
+
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px !important;
+  z-index: 100;
+  justify-self: flex-end;
+}
+
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+  border: 0;
+  border-bottom: 1px solid #b4becd;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+.showcase-form input[type='submit'] {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.showcase-wave {
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.showcase-wave svg {
+  height: 100%; 
+  width: 100%
+}
+
+.showcase-wave svg path {
+ stroke: none; fill:white;
+}
+

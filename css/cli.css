@@ -1,0 +1,59 @@
+.cli {
+  background-color: var(--primary-light-color);
+  margin: 30px 0 0;
+}
+
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 4px;
+}
+
+.cli .grid .background {
+  grid-row: 1 / span 3;
+  grid-column: 1 / span 2;
+}
+
+.cli .grid .card:nth-child(2) {
+  margin-top: 20px;
+}
+
+.cli .grid .card:last-child {
+  margin-bottom: 20px;
+}
+
+.cli .grid .right {
+  margin-left: 30px;
+  text-align: right;
+}
+
+.cli .grid .left {
+  margin-right: 30px;
+  text-align: left;
+}
+
+.cli .background {
+  background: #002240;
+  border: none;
+  border-radius: 1rem;
+  height: 170px;
+  margin: 36px 0;
+  padding: 25px 0 0 40px;
+
+  font-family: 'Courier New', Courier, monospace;
+  color: #7dd2d8;
+  font-weight: bold;
+  font-size: 18px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cli .background p {
+  margin: 0;
+}
+
+.cli .card {
+  font-size: 20px;
+  margin: 0;
+}
+

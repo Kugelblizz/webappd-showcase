@@ -1,0 +1,22 @@
+.languages {
+  margin: 80px 0;
+}
+
+.languages .languages-list {
+  justify-content: space-evenly;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+
+.languages .languages-list .languages-list-element {
+  margin: 10px;
+}
+
+.languages .bottom {
+  text-align: end;
+}
+
+
+
+
