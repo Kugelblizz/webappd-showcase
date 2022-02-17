@@ -12,14 +12,7 @@
       referrerpolicy="no-referrer"
       defer
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
-      integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-      defer
-    />
+
     <link rel="stylesheet" href="./css/style.css" defer />
 
     <title>WebAppd | Cloudhosting for everyone</title>
@@ -35,18 +28,145 @@
 
             <li><a href="features.html">Features</a></li>
 
-            <li><a href="docs.html">Documentation</a></li>
+            <li class="current-link"><a href="docs.html">Documentation</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <!-- end Navbar-->
 
-    <section class="my-5">
-      <div class="container">
-        placeholder
+    <section class="docs title py-4">
+      <div class="container grid grid-title">
+        <div>
+          <h1>Documentation</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dignissimos sunt earum deleniti. A cum
+            fugiat quo quibusdam nisi officiis eum ab ut! Sequi saepe aperiam dolores consequatur, ducimus incidunt ipsa
+            ex reprehenderit, illo facere nesciunt ad laboriosam eaque alias. Quae suscipit officiis incidunt architecto
+            quidem, necessitatibus corrupti accusantium fugiat?
+          </p>
+        </div>
+        <div class="p-4">
+          <img src="./images/docs.png" alt="Features" />
+        </div>
       </div>
     </section>
+
+    <section class="docs content my-4">
+      <div class="container grid">
+        <nav class="card">
+          <ul>
+            <li class="top"><h2>Start Here</h2></li>
+            <li><a href="#">What is WebAppd</a></li>
+            <li><a href="#">Installation</a></li>
+            <li><a href="#">Getting Started</a></li>
+            <li><h2>Deployment</h2></li>
+            <li><a href="#">Preparations</a></li>
+            <li><a href="#">CLI Reference</a></li>
+            <li><a href="#">Another Link</a></li>
+            <li><a href="#">Another LInk mk.2</a></li>
+          </ul>
+        </nav>
+
+        <div class="text-area card">
+          <h2>What is WebAppd</h2>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus quae placeat nemo dolorem id illo
+            minus error rem vitae iste accusantium quod harum quia explicabo, distinctio vel suscipit. Ipsa suscipit
+            magnam ratione quaerat omnis tempora reiciendis! Incidunt nam cumque quis.
+          </p>
+
+          <h3>Heading 3</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam saepe, atque porro quo facilis officiis
+            natus aperiam ex eos voluptatum similique a animi sequi laborum voluptates omnis ratione odit soluta ab
+            consectetur quaerat, aut magnam minus dicta? Ipsa praesentium veritatis quae eum architecto asperiores saepe
+            fugit inventore! Similique iste nostrum sunt dolor fugiat voluptas deserunt repellat officiis possimus quo
+            corporis tempora unde, temporibus cupiditate sequi a officia? Recusandae, quis veritatis velit optio sint
+            quam? Consequatur incidunt at magni laborum velit ullam eos excepturi eum quia! Iure facere nam obcaecati
+            quisquam, animi unde alias a ipsam, hic dolor, voluptatem saepe quia?
+          </p>
+
+          <h3>Minium Requirements</h3>
+
+          <ul>
+            <li>Windows, Linux or MacOSX</li>
+            <li>NodeJs Version 11 or higher</li>
+            <li>a working Internet connection</li>
+          </ul>
+
+          <div class="cli">
+            <ul>
+              <li id="npmBtn" class="active">NPM</li>
+              <li id="yarnBtn">Yarn</li>
+              <li id="brewBtn">Brew</li>
+            </ul>
+            <div id="npmCli" class="background">
+              <p>npm install -g webappd-cli</p>
+            </div>
+            <div id="yarnCli" class="background hide">
+              <p>yarn global add webappd-cli</p>
+            </div>
+            <div id="brewCli" class="background hide">
+              <p>brew install webappd-cli</p>
+            </div>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iste iusto voluptatum expedita corporis
+            dignissimos suscipit, distinctio minima dolores fuga atque incidunt rerum consectetur velit hic eum quo?
+            Asperiores quae aliquid minima ut, quos, ipsum iure doloribus numquam officiis modi atque similique amet
+            nobis! Nam delectus magnam facere, suscipit eligendi laboriosam. Dignissimos, possimus? Aliquam sint
+            molestiae doloremque, quo consectetur qui? Eaque itaque molestias obcaecati repellendus corporis similique
+            quasi. Veritatis culpa iure accusantium vero. Alias nihil, illum pariatur suscipit nostrum eaque delectus
+            maxime corrupti at accusamus ipsa repellat. Reiciendis optio ex aliquam, modi animi ab. Aperiam nisi
+            accusamus tenetur, impedit minima molestiae nobis quae, ipsum eos nihil totam voluptatem odio odit expedita
+            dolorem eum tempore optio voluptates debitis? Officia, voluptates possimus? Alias eaque a quasi. At nostrum
+            voluptatibus dolore eligendi laudantium obcaecati qui eveniet sapiente esse, minus architecto, molestias
+            ipsa rerum porro rem vero impedit repellat?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const npmBtn = document.getElementById('npmBtn');
+      const yarnBtn = document.getElementById('yarnBtn');
+      const brewBtn = document.getElementById('brewBtn');
+
+      const npmCli = document.getElementById('npmCli');
+      const yarnCli = document.getElementById('yarnCli');
+      const brewCli = document.getElementById('brewCli');
+
+      npmBtn.addEventListener('click', () => {
+        changeCli(npmCli, yarnCli, brewCli);
+        changeActiveButton(npmBtn, yarnBtn, brewBtn);
+      });
+
+      yarnBtn.addEventListener('click', () => {
+        changeCli(yarnCli, npmCli, brewCli);
+        changeActiveButton(yarnBtn, npmBtn, brewBtn);
+      });
+
+      brewBtn.addEventListener('click', () => {
+        changeCli(brewCli, npmCli, yarnCli);
+        changeActiveButton(brewBtn, npmBtn, yarnBtn);
+      });
+
+      function changeCli(show, hide1, hide2) {
+        show.classList.remove('hide');
+        hide1.classList.add('hide');
+        hide2.classList.add('hide');
+      }
+
+      function changeActiveButton(active, inactive1, inactive2) {
+        active.classList.add('active');
+        inactive1.classList.remove('active');
+        inactive2.classList.remove('active');
+      }
+    </script>
 
     <!--Footer-->
     <footer class="footer">

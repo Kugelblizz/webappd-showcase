@@ -1,0 +1,64 @@
+.docs.content .grid {
+  grid-template-columns: 250px 1fr;
+  gap: 0px;
+  align-items: start;
+}
+
+.docs.content nav.card {
+  background-color: #f2f2f2;
+  box-shadow: none;
+}
+
+.docs.content .text-area.card {
+  box-shadow: none;
+  border: 3px solid #f2f2f2;
+}
+
+.docs.content nav.card li h2 {
+  margin: 0;
+}
+
+.docs.content nav.card li:not(:first-of-type) {
+  margin: 8px 0;
+}
+
+.docs.content nav.card li:not(:first-of-type) > h2 {
+  margin: 16px 0 0;
+}
+
+.docs.content nav.card li a:hover {
+  font-weight: bold;
+}
+
+.docs.content .cli {
+  background-color: unset;
+}
+
+.docs.content .cli .background {
+  border-radius: 0 0 1rem 1rem;
+  margin-top: 0;
+  height: 90px;
+}
+
+
+.docs.content .cli .background.hide {
+  display: none;
+}
+
+.docs.content .cli ul {
+  display: flex;
+  background: var(--primary-light-color);
+  border-radius: 1rem 1rem 0 0;
+  padding: 0 0 0 20px;
+}
+
+.docs.content .cli ul li {
+  padding: 4px 8px;
+}
+
+.docs.content .cli ul li.active,
+.docs.content .cli ul li:hover {
+  background-color: var(--dark-color);
+  color: white;
+  cursor: pointer;
+}

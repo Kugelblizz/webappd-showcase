@@ -1,0 +1,42 @@
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: var(--body-font-family);
+    font-weight: 300;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  h1,
+  h2 {
+    font-family: var(--heading-font-family);
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .btn {
+    font-family: var(--heading-font-family);
+  }

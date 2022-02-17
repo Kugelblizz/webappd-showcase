@@ -25,11 +25,20 @@
   padding: 10px;
 }
 
-.navbar li:hover {
+.navbar li:hover:not(.current-link){
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
-  /* background: var(--primary-accent-color); */
 }
+
+.navbar li.current-link {
+  border-bottom: 2px solid #fff;
+}
+
+.navbar li.current-link a{
+  cursor: default;
+}
+
+
 
 .navbar .flex {
   justify-content: space-between;

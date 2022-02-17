@@ -33,7 +33,7 @@
 }
 
 .cli .background {
-  background: #002240;
+  background: var(--dark-color);
   border: none;
   border-radius: 1rem;
   height: 170px;

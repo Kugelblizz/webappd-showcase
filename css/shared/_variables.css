@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #047aed;
+    --primary-accent-color: #1e82e6;
+    --primary-light-color: #adcff1;
+  
+    --secondary-color: #1c3fa8;
+    --secondary-accent-color: #3958b8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+  
+    --body-font-family: 'Lato', sans-serif; 
+    --heading-font-family: 'Share Tech', sans-serif;
+  }
