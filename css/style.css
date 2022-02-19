@@ -16,6 +16,8 @@
 @import './shared/footer.css';
 @import './shared/navbar.css';
 
+@import './responsive.css';
+
 @import './shared/utilities.css';
 
 

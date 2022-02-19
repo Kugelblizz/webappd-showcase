@@ -39,6 +39,7 @@
   height: 170px;
   margin: 36px 0;
   padding: 25px 0 0 40px;
+  min-width: 320px;
 
   font-family: 'Courier New', Courier, monospace;
   color: #7dd2d8;

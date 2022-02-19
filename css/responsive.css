@@ -1,0 +1,144 @@
+.mobile-720 {
+    display: none;
+}
+
+
+@media screen and (max-width: 1150px) {
+  .navbar .logo {
+    margin: 0 16px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .showcase .grid {
+    grid-template-columns: 60% 40%;
+  }
+  .showcase-form {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .showcase .grid {
+    grid-template-columns: 1fr;
+  }
+  .showcase-form {
+    width: 100%;
+  }
+
+  .stats {
+    margin-top: 200px;
+  }
+
+  .stats-text {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .stats-number {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .cli .grid .card {
+    text-align: center;
+    margin: 0;
+  }
+
+  .cli .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 4px;
+  }
+
+  .cli .grid .background {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    margin: 36px 0 0 0;
+  }
+
+  .blockchain .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blockchain .blockchain-text .text-block {
+    margin: 0;
+  }
+
+  .blockchain .blockchain-text h2 {
+    text-align: center;
+  }
+
+  .blockchain .blockchain-image {
+    margin: 20px 50px 0;
+  }
+
+  .footer .footer-socials {
+    justify-self: center;
+  }
+
+  .title .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .title h1 {
+    word-wrap: normal;
+    word-wrap: break-word;
+  }
+
+  .mobile-720 {
+      display: inline;
+  }
+
+  .non-mobile-720 {
+      display: none;
+  }
+
+  .docs.content .grid {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media screen and (max-width:570px) {
+    .docs.content .grid {
+        grid-template-columns: 1fr;
+      }
+}
+
+@media screen and (max-width: 500px) {
+  .stats {
+    margin-top: 350px;
+  }
+
+  .grid.grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .cli .grid .card {
+    font-size: 15px;
+  }
+
+  .cli .grid .background {
+    font-size: 15px;
+  }
+
+  .title .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-grid .grid {
+   grid-template-columns: 1fr;
+
+
+}
+
+.feature-grid .grid-item {
+    grid-column: 1 / 2 !important;
+}
+}
+
+@media screen and (max-width: 320px) {
+  .stats {
+    margin-top: 400px;
+  }
+}

@@ -1,4 +1,3 @@
-
 .showcase {
   height: 500px;
   background: url(/images/hero.jpg) var(--primary-color);
@@ -66,17 +65,17 @@
   height: 100px;
   overflow: hidden;
   position: absolute;
-  bottom: 0;
+  bottom: -1px; /* fix incorrect 1 pixel row showing on zoom out*/
   right: 0;
   left: 0;
 }
 
 .showcase-wave svg {
-  height: 100%; 
-  width: 100%
+  height: 100%;
+  width: 100%;
 }
 
 .showcase-wave svg path {
- stroke: none; fill:white;
+  stroke: none;
+  fill: white;
 }
-
